@@ -1,0 +1,163 @@
+body {
+  font-size: 16px;
+  letter-spacing: normal;
+  font-family: futura-pt,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  background-color: white;
+  /* animation: body 1s linear; */
+}
+
+#navbar {
+height: auto;
+background-color: white;
+overflow: hidden;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1;
+}
+
+#logo {
+  padding-left: 0;
+  color: #505050;
+  font-size: 2.5vh;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+
+#logo a {
+  line-height: 10vh;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+#hamburger {
+ text-align: right;
+ margin-top: auto;
+ margin-bottom: auto;
+ padding-right: 0;
+}
+
+#hamburger svg {
+  height: 2.5vh;
+}
+
+#hamburger_links2 {
+  padding-right: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.hamburger_links_a {
+  line-height: 10vh;
+  text-decoration: none;
+  color: #A8ADB1;
+  /* margin-left: 4vh; */
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.hamburger_links_ml {
+  margin-left: 4vh;
+}
+
+#hamburger_links2 a:hover {
+  color: #505050;
+}
+
+#break_0 {
+  height: 5vh;
+}
+
+#break_1 {
+  height: 10vh;
+}
+#about .col-5 {
+  padding: 0;
+}
+
+#about p {
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.6rem;
+  color: #505050;
+}
+
+#social_media_center {
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#social_media_icons {
+  text-align: right;
+}
+
+#social_media_icons a{
+  text-decoration: none;
+}
+
+#social_media_icons svg {
+  height: 2vh;
+  fill: #505050;
+  margin: 0 5px;
+  transition: transform .1s;
+
+}
+
+#social_media_icons svg:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+.gallery img,div {
+    -webkit-transition: all 0.25s linear;
+       -moz-transition: all 0.25s linear;
+        -ms-transition: all 0.25s linear;
+         -o-transition: all 0.25s linear;
+            transition: all 0.25s linear;
+}
+
+.gallery img:hover {
+    opacity: 0.1;
+}
+
+.gallery img:hover + #centered_text {
+    opacity: 1;
+}
+
+#gallery_large {
+  height: 70vh;
+  padding: 0;
+  background-color: #505050;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#centered_text {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+
+  opacity: 0;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
